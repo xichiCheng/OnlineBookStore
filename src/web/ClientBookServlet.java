@@ -66,6 +66,7 @@ public class ClientBookServlet extends BaseServlet {
         }
 
         HttpSession session = req.getSession();
+
         String mainURL="ClientBookServlet?"+req.getQueryString();
         session.setAttribute("mainURL",mainURL);
 

@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Objects;
 
 
 public class BookServlet extends BaseServlet{
@@ -56,6 +57,12 @@ public class BookServlet extends BaseServlet{
         protected void update(HttpServletRequest req,HttpServletResponse resp) throws SQLException, IOException {
                 Book book=new Book();
                  book=(Book)WebUtils.copyParamToBean(req,book);
+                 String sales=req.getParameter("sales");
+                 String imgPath=req.getParameter("imgPath");
+                 book.setSales(Integer.valueOf(sales));
+                 if(Objects.equals(book.getImgPath(), "")){
+                     book.setImgPath(imgPath);
+                 }
                  bookService.updateBook(book);
                  resp.sendRedirect(req.getContextPath()+"/manager/BookServlet?action=page");
         }

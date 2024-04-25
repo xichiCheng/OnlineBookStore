@@ -23,7 +23,6 @@ public class loginFilter implements Filter {
         HttpServletRequest httpServletRequest=(HttpServletRequest) servletRequest;
         HttpSession session=httpServletRequest.getSession();
         Object user=session.getAttribute("username");
-        System.out.println(user);
         if(user==null){
             httpServletRequest.getRequestDispatcher("/index.jsp").forward(servletRequest,servletResponse);
             return;
