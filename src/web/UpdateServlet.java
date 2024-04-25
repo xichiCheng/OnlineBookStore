@@ -19,13 +19,13 @@ import java.util.List;
 import java.util.Objects;
 
 public class UpdateServlet extends HttpServlet {
+    BookServiceImpl bookService=new BookServiceImpl();
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Book book=new Book();
         String imgPath="static/img/default.jpg";
 
         if(ServletFileUpload.isMultipartContent(req)){
-            System.out.println("???");
             FileItemFactory fileItemFactory = new DiskFileItemFactory();
             ServletFileUpload servletFileUpload=new ServletFileUpload(fileItemFactory);
             try {
@@ -41,6 +41,9 @@ public class UpdateServlet extends HttpServlet {
                     }else{
                         if(Objects.equals(fileItem.getFieldName(), "name")){
                             book.setName(fileItem.getString("UTF-8"));
+                        }
+                        else if(Objects.equals(fileItem.getFieldName(), "id")){
+                            book.setId(Integer.valueOf(fileItem.getString("UTF-8")));
                         }
                         else if(Objects.equals(fileItem.getFieldName(), "sales")){
                            book.setSales(Integer.valueOf(fileItem.getString("UTF-8")));
@@ -68,13 +71,13 @@ public class UpdateServlet extends HttpServlet {
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
-
             try {
-                new BookServiceImpl().updateBook(book);
-                System.out.println(book);
+                System.out.println("???");
+                bookService.updateBook(book);
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
+            System.out.println(book);
 
             req.getRequestDispatcher("manager/BookServlet?action=page").forward(req,resp);
         }

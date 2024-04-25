@@ -206,7 +206,6 @@
         <div>作者：<span >${requestScope.book.author}</span></div>
         <div>销量：<span >${requestScope.book.sales}</span></div>
         <div>库存：<span >${requestScope.book.stock}</span></div>
-        <div>类型：<span >${requestScope.book.type} </span></div>
         <div>&nbsp;</div>
 
         <button class="addToCart"   bookId="${requestScope.book.id}">

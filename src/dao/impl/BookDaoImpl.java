@@ -25,8 +25,8 @@ public class BookDaoImpl implements BookDaoInterface {
 
     @Override
     public int updateBook(Book book) throws SQLException {
-        String sql="update t_book set `name`=? ,`author`=?,`price`=?,`sales`=?,`stock`=?,`img_path`=? where id=?";
-        return  bookDAO.update(sql,book.getName(),book.getAuthor(),book.getPrice(),book.getSales(),book.getStock(),book.getImgPath(),book.getId());
+        String sql="update t_book set `name`=? ,`author`=?,`price`=?,`sales`=?,`stock`=?,`img_path`=? ,`profile`=?,`type`=? where id= ?";
+        return  bookDAO.update(sql,book.getName(),book.getAuthor(),book.getPrice(),book.getSales(),book.getStock(),book.getImgPath(),book.getProfile(),book.getType(),book.getId());
     }
 
     @Override
