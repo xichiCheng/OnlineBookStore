@@ -54,7 +54,7 @@
             <input type="checkbox" id="rememberMe">
             <label for="rememberMe">记住我</label>
         </div>
-   <a href="pages/user/Register.jsp">     <button id="Jump">去注册</button></a>
+   <a href="Register.jsp">     <button id="Jump">去注册</button></a>
 
     </div>
 </div>
