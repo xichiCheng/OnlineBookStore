@@ -1,0 +1,37 @@
+#relative-container {
+    position: relative; /* 设置父元素为相对定位 */
+    height: 30vh; /* 使父元素占据整个视口高度 */
+}
+
+#left1{
+    position: absolute; /* 设置子元素为绝对定位 */
+    top:10px;
+    left: 10px;
+    width: 240px;
+    height: 280px;
+    background-color: #3498db;
+}
+
+.left2{
+    position: absolute; /* 设置子元素为绝对定位 */
+    top:300px;
+    left: 10px;
+    width: 240px;
+    height: 260px;
+    background-color: #3498db;
+}
+.right1{
+    position: absolute; /* 设置子元素为绝对定位 */
+    top:50px;
+    right: 170px;
+    width: 600px;
+    height: 120px;
+    background-color: #3498db;
+}
+.right2{
+    position: absolute; /* 设置子元素为绝对定位 */
+    top:220px;
+    right: 110px;
+    width: 720px;
+
+}

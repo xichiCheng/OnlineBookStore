@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/web/pages/client/ClientBook_buy.jsp" value="file://$PROJECT_DIR$/web/pages/client" />
+        <entry key="file://$PROJECT_DIR$/web/pages/comment/comment.jsp" value="file://$PROJECT_DIR$/web/pages/comment" />
+        <entry key="file://$PROJECT_DIR$/web/pages/user/Register.html" value="file://$PROJECT_DIR$/web/pages/user" />
+      </map>
+    </option>
+  </component>
+</project>

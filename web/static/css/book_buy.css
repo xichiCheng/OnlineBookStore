@@ -1,0 +1,289 @@
+.card {
+    width: 190px;
+    height: 230px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#my_card {
+    width: 230px;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%);
+    background-blend-mode: normal, normal, screen, overlay, normal;
+    box-shadow: 0px 0px 10px 1px #000000;
+}
+.mybut {
+    padding: 0.6em 1.1em;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.mybut:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.mybut:active {
+    transform: translateY(-1px);
+}
+
+div {
+    text-align: center;
+}
+
+#my_table {
+    margin: auto;
+}
+#my_table {
+    border-spacing: 30px; /* 设置表格元素之间的间隔为 10 像素 */
+}
+
+
+body {
+
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+
+}
+.gd {
+    color: rgb(182, 255, 192);
+    --color1: pink;
+    --color2: orangered;
+    --color3: red;
+    --color4: magenta;
+    text-shadow:
+            0 0 10px var(--color1),
+            0 0 20px var(--color2),
+            0 0 40px var(--color3),
+            0 0 80px var(--color4);
+}
+#my-div {
+    font-size: 20px;
+}
+
+
+#searchPageBth {
+    padding: 1.3em 3em;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#searchPageBth:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#searchPageBth:active {
+    transform: translateY(-1px);
+}
+.input {
+    font-size: 13px;
+    width: 80%;
+    max-width: 50px;
+    height: 25px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+    transform: scale(0.95);
+}
+
+.input:focus {
+    border: 2px solid grey;
+}
+
+.preserve-space {
+    white-space: pre;
+}
+.right {
+    float: right;
+}
+
+
+.table1{
+    text-align: center; /* 水平居中表格 */
+}
+
+
+.addToCart {
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px rgb(139, 113, 255);
+    transition-duration: .3s;
+}
+
+.cartIcon{
+    width: 40px;
+    height: 30px;
+}
+
+.addToCart{
+    fill: white;
+}
+
+.addToCart:active {
+    transform: translate(2px ,0px);
+    box-shadow: 0px 1px 0px rgb(139, 113, 255);
+    padding-bottom: 1px;
+}
+
+ul {
+    list-style-type: none; /* 移除列表前的项目符号 */
+    padding: 0; /* 移除默认的列表内边距 */
+}
+
+.button5 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .20rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 0.8;
+    min-height: 2.2rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+#bottone5:hover,
+#bottone5:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#bottone5:hover {
+    transform: translateY(-1px);
+}
+
+#bottone5:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+#my_td{
+    padding: 0 120px;
+
+}
+
+#my_input {
+    font-size: 13px;
+    width: 130%;
+    max-width: 100px;
+    height: 25px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+
+#my_input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+#my_input:active {
+    transform: scale(0.95);
+}
+
+#my_input:focus {
+    border: 2px solid grey;
+}
+
+#div1{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#main{
+    position: relative; /* 设置父元素为相对定位 */
+    height: 10vh; /* 使父元素占据整个视口高度 */
+}
+#left{
+    position: absolute; /* 设置子元素为绝对定位 */
+    top:100px;
+    left: 10px;
+
+}
+#right{
+    position: absolute; /* 设置子元素为绝对定位 */
+    top:100px;
+    right: 10px;
+}
+#center{
+    position: absolute; /* 设置子元素为绝对定位 */
+    top:100px;
+    right: 450px;
+}
+
+#second{
+    position: relative; /* 设置父元素为相对定位 */
+    height: 0;
+}
+#second_center{
+    position: absolute; /* 设置子元素为绝对定位 */
+    top:130px;
+    left: 60px;
+}
