@@ -24,6 +24,7 @@ public class UpdateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Book book=new Book();
         String imgPath="static/img/default.jpg";
+        String profile="";
 
         if(ServletFileUpload.isMultipartContent(req)){
             FileItemFactory fileItemFactory = new DiskFileItemFactory();
@@ -41,6 +42,9 @@ public class UpdateServlet extends HttpServlet {
                     }else{
                         if(Objects.equals(fileItem.getFieldName(), "name")){
                             book.setName(fileItem.getString("UTF-8"));
+                        }
+                        else if(Objects.equals(fileItem.getFieldName(), "preProfile")){
+                           profile=fileItem.getString("UTF-8");
                         }
                         else if(Objects.equals(fileItem.getFieldName(), "id")){
                             book.setId(Integer.valueOf(fileItem.getString("UTF-8")));
@@ -64,7 +68,11 @@ public class UpdateServlet extends HttpServlet {
                             book.setType(fileItem.getString("UTF-8"));
                         }
                         else if(Objects.equals(fileItem.getFieldName(), "profile")){
-                            book.setProfile(fileItem.getString("UTF-8"));
+                            if(Objects.equals(fileItem.getString("UTF-8"), "")){
+                                book.setProfile(profile);
+                            }else {
+                                book.setProfile(fileItem.getString("UTF-8"));
+                            }
                         }
                     }
                 }

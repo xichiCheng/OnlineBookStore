@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/web/pages/client/ClientBook_buy.jsp" value="file://$PROJECT_DIR$/web/pages/client" />
         <entry key="file://$PROJECT_DIR$/web/pages/comment/comment.jsp" value="file://$PROJECT_DIR$/web/pages/comment" />
+        <entry key="file://$PROJECT_DIR$/web/pages/manager/book_edit.jsp" value="file://$PROJECT_DIR$/web/pages/manager" />
         <entry key="file://$PROJECT_DIR$/web/pages/user/Register.html" value="file://$PROJECT_DIR$/web/pages/user" />
       </map>
     </option>

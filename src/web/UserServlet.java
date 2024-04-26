@@ -54,6 +54,7 @@ public class UserServlet extends BaseServlet {
     protected void register(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //注册，从req域中获取username
         String username = req.getParameter("username");
+        String password=req.getParameter("password");
         User user=new User();
         WebUtils.copyParamToBean(req,user);
         //如果表中已存在username,则注册失败
@@ -66,6 +67,13 @@ public class UserServlet extends BaseServlet {
             userService.regisUser(user);
             req.setAttribute("msg","注册成功");
             //返回登录界面
+            Cookie cookie1=new Cookie("username",username);
+            cookie1.setMaxAge(60*60*24*7*30);
+            resp.addCookie(cookie1);
+            Cookie cookie2=new Cookie("password",password);
+            cookie2.setMaxAge(60*60*24*7*30);
+            resp.addCookie(cookie2);
+
             req.getRequestDispatcher("index.jsp").forward(req,resp);
         }
     }
