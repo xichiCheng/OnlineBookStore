@@ -33,7 +33,6 @@
                 var  value=this.value;
                 var  bookId=$(this).attr('bookId');
                 var preValue=this.defaultValue;
-                alert(preValue);
                 $.ajax({
                     type: "POST",
                     url: "CartServlet",

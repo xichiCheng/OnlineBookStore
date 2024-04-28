@@ -12,6 +12,7 @@
     <title>Title</title>
     <base href="http://localhost:8080/OnlineBookstore/">
     <link rel="stylesheet" href="static/css/book_manager.css">
+    <link rel="stylesheet" href="static/css/book_add_edit.css">
 </head>
 <body>
 <div id="main"  class="container">
@@ -41,7 +42,10 @@
             </tr>
         </c:forEach>
     </table>
-    <div><a  href="background.jsp" class="right"><button class="mybut">back</button></a></div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
 </div>
+<div><a  href="background.jsp" class="right"><button class="mybut" id="back">back</button></a></div>
 </body>
 </html>
